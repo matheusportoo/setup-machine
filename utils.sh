@@ -32,7 +32,7 @@ function apt_install_from () {
   while IFS= read -r line; do
     command=($line)
     print_message "» Installing ${command[1]}..." "$2"
-    echo "sudo ${command[0]} install ${command[1]}"
+    exec "sudo ${command[0]} install ${command[1]}"
   done < "$1"
 }
 
@@ -42,7 +42,7 @@ function snap_install_from () {
   # $line -> <app-name>
   while IFS= read -r app; do
     print_message "» Installing $app..." "$2"
-    echo "sudo snap install $app"
+    exec "sudo snap install $app"
   done < "$1"
 }
 

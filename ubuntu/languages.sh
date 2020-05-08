@@ -1,3 +1,3 @@
-apt-get ruby-full
-apt golang-go
+apt ruby
 apt php7.4-cli
+apt golang-go

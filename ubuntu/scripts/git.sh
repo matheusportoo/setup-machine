@@ -1,4 +1,4 @@
-source "../utils.sh"
+source "../../utils.sh"
 
 print_message "» Installing git..." "red"
 sudo apt install git

@@ -13,16 +13,13 @@ sudo apt-get update
 # installing essential proograms
 apt_install_from "./essentials.sh" "green"
 
-# installing essential languages
-apt_install_from "./languages.sh" "cyan"
-
 # installing and config git, ohmyzsh, nvm
 chmod +x ./git.sh && ./git.sh
 chmod +x ./ohmyzsh.sh && ./ohmyzsh.sh
 chmod +x ./nvm.sh && ./nvm.sh
 
-print_message "» Installing snap..." "yellow"
-sudo apt install snapd
+# installing essential languages
+apt_install_from "./languages.sh" "cyan"
 
 # installing apps via snap
 snap_install_from "./apps.sh" "yellow"

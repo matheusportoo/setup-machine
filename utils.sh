@@ -32,7 +32,7 @@ function apt_install_from () {
   while IFS= read -r line; do
     command=($line)
     print_message "» Installing ${command[1]}..." "$2"
-    sudo ${command[0]} install ${command[1]}
+    sudo ${command[0]} install ${command[1]} ${command[2]}
   done < "$1"
 }
 

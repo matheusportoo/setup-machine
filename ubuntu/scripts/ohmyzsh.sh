@@ -1,4 +1,4 @@
-source "../utils.sh"
+source "../../utils.sh"
 
 print_message "» Installing oh my zsh..." "red"
 sudo apt-get install zsh

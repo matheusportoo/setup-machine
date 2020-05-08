@@ -3,7 +3,7 @@ source "../utils.sh"
 print_message "» Installing git..." "red"
 sudo apt install git
 
-print_message "» Config git..." "yellow"
+print_message "» Config git..." "red"
 git --version
 read -p "Enter your name [Matheus Porto]: " GIT_USER_NAME
 git config --global user.name $GIT_USER_NAME

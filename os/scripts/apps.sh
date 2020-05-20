@@ -1,0 +1,16 @@
+1password
+authy
+docker
+docker-toolbox
+firefox
+google-chrome
+graphql-playground
+insomnia
+iterm2
+postico
+sequel-pro
+spotify
+spotmenu
+sublime-text
+virtualbox
+visual-studio-code

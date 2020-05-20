@@ -46,6 +46,26 @@ function snap_install_from () {
   done < "$1"
 }
 
+function brew_install_from () {
+  # $1 - filename
+  # $2 - color
+  # $line -> <app-name>
+  while IFS= read -r app; do
+    print_message "» Installing $app..." "$2"
+    brew install $app
+  done < "$1"
+}
+
+function brew_cask_install_from () {
+  # $1 - filename
+  # $2 - color
+  # $line -> <app-name>
+  while IFS= read -r app; do
+    print_message "» Installing $app..." "$2"
+    brew cask install $app
+  done < "$1"
+}
+
 export -f print_message
 export -f apt_install_from
 export -f snap_install_from
